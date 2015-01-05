@@ -1,0 +1,2 @@
+MainPackage=G:\MobileAppIrish\MobileAppIrish\bin\x86\Release\MobileAppIrish_1.1.0.21_Bundle\MobileAppIrish_1.1.0.21_x86.appx
+SymbolPackage=G:\MobileAppIrish\MobileAppIrish\AppPackages\MobileAppIrish_1.1.0.21_Test\MobileAppIrish_1.1.0.21_x86.appxsym

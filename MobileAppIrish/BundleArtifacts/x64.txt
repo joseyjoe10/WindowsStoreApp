@@ -1,0 +1,4 @@
+MainPackage=G:\MobileAppIrish\MobileAppIrish\bin\x64\Release\MobileAppIrish_1.1.0.23_Bundle\MobileAppIrish_1.1.0.23_x64.appx
+SymbolPackage=G:\MobileAppIrish\MobileAppIrish\AppPackages\MobileAppIrish_1.1.0.23_Test\MobileAppIrish_1.1.0.23_x64.appxsym
+ResourcePack=G:\MobileAppIrish\MobileAppIrish\bin\x64\Release\MobileAppIrish_1.1.0.23_Bundle\MobileAppIrish_1.1.0.23_scale-140.appx
+ResourcePack=G:\MobileAppIrish\MobileAppIrish\bin\x64\Release\MobileAppIrish_1.1.0.23_Bundle\MobileAppIrish_1.1.0.23_scale-180.appx

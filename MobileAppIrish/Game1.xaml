@@ -1,0 +1,357 @@
+﻿<Page
+    x:Class="MobileAppIrish.Game1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MobileAppIrish"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <Page.Resources>
+        <Style x:Key="HyperlinkButtonStyle1" TargetType="HyperlinkButton">
+            <Setter Property="Foreground" Value="{ThemeResource HyperlinkForegroundThemeBrush}"/>
+            <Setter Property="Background" Value="{ThemeResource HyperlinkButtonBackgroundThemeBrush}"/>
+            <Setter Property="BorderBrush" Value="{ThemeResource HyperlinkButtonBorderThemeBrush}"/>
+            <Setter Property="BorderThickness" Value="{ThemeResource HyperlinkButtonBorderThemeThickness}"/>
+            <Setter Property="Padding" Value="12,4,12,5"/>
+            <Setter Property="HorizontalAlignment" Value="Left"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="FontSize" Value="{ThemeResource ControlContentThemeFontSize}"/>
+        </Style>
+    </Page.Resources>
+
+
+    <Viewbox Name="IheartDOnegal69" Stretch="UniformToFill"   Grid.Column="1" Grid.Row="1"  >
+
+
+
+        <ScrollViewer  Margin="-2,0,0,0" HorizontalScrollBarVisibility="Visible" HorizontalScrollMode="Enabled">
+
+
+
+
+            <Grid Background="White" Height="1000" Width="1000">
+                <Canvas>
+                    <Image Source="Assets/irelandMain.jpeg" />
+                    <MediaElement x:Name="dead"  Source="Assets/dead.mp3" AutoPlay="False" Visibility="Collapsed"/>
+                    <MediaElement x:Name="tada"  Source="Assets/tada.mp3" AutoPlay="False" Visibility="Collapsed"/>
+                    <MediaElement x:Name="wrong"  Source="Assets/wrong.mp3" AutoPlay="False" Visibility="Collapsed"/>
+                    <MediaElement x:Name="correct"  Source="Assets/correct.mp3" AutoPlay="False" Visibility="Collapsed"/>
+                    <Image HorizontalAlignment="Left" Height="520.718" Source="Assets/Ireland.png" VerticalAlignment="Top" Width="693.121" Canvas.Left="13.035" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Canvas.Top="39.515">
+                        <Image.RenderTransform>
+                            <CompositeTransform Rotation="-0.392"/>
+                        </Image.RenderTransform>
+                    </Image>
+                    <Border BorderBrush="White" Opacity=".25" CornerRadius="30" BorderThickness="1" HorizontalAlignment="Left" Height="106" VerticalAlignment="Top" Width="205" Background="Black" Canvas.Left="638" Canvas.Top="184"/>
+                    <Button x:Name="BtnDonegal" Content="" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="111.273" Width="66.761" Canvas.Left="330.212" Canvas.Top="66.839" Click="BtnDonegal_Click" BorderThickness="0" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Button.RenderTransform>
+                            <CompositeTransform Rotation="40.268"/>
+                        </Button.RenderTransform>
+                        <Button.Background>
+                            <SolidColorBrush Color="Yellow" Opacity="0.01"/>
+                        </Button.Background>
+                    </Button>
+
+                    <Button x:Name="BtnBack" Content="Back" Foreground="Black" BorderBrush="green" Canvas.Left="2" Canvas.Top="2" Click="Button_Click" Background="Yellow" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" FontFamily="Buxton Sketch">
+                        <Button.RenderTransform>
+                            <CompositeTransform Rotation="-0.404"/>
+                        </Button.RenderTransform>
+                    </Button>
+
+                    <TextBlock x:Name="txtLives" Canvas.Left="168.92" Foreground="White" TextWrapping="Wrap" FontSize="25" Text="Lives  :" Canvas.Top="15.804" Height="47" Width="102" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" FontFamily="Buxton Sketch">
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform Rotation="0.492"/>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <TextBlock x:Name="Score" Canvas.Left="676.628" Foreground="Black" TextWrapping="Wrap" FontSize="25" Text="/ 32" Canvas.Top="299.124" Height="47" Width="58" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" FontFamily="Buxton Sketch">
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform Rotation="0.596"/>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <Button x:Name="BtnDerry" Content="" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="52" Canvas.Left="404" Canvas.Top="100" Click="BtnDerry_Click" BorderThickness="0">
+                        <Button.Background>
+                            <SolidColorBrush Color="Yellow" Opacity="0.01"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="BtnAntrim" Content="" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="71" Width="50" Canvas.Left="458" Canvas.Top="100" Click="BtnAntrim_Click" BorderThickness="0">
+                        <Button.Background>
+                            <SolidColorBrush Color="Yellow" Opacity="0.10000000149011612"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="BtnDown" Content="" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="66" Width="57" Canvas.Left="473" Canvas.Top="159" Click="BtnDown_Click" BorderThickness="0">
+                        <Button.Background>
+                            <SolidColorBrush Color="Yellow" Opacity="0.01"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="BtnTyrone" Content="" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="42.251" Width="68.55" Canvas.Left="377.114" Canvas.Top="147.338" Click="BtnTyrone_Click" RenderTransformOrigin="0.524,0.6" UseLayoutRounding="False" d:LayoutRounding="Auto" BorderThickness="0">
+                        <Button.RenderTransform>
+                            <CompositeTransform Rotation="29.603" SkewY="-0.07" TranslateX="0.026" TranslateY="-0.045"/>
+                        </Button.RenderTransform>
+                        <Button.Background>
+                            <SolidColorBrush Color="Yellow" Opacity="0.01"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="BtnArmagh" Content="" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="21" Canvas.Left="445" Canvas.Top="177" Click="BtnArmagh_Click" BorderThickness="0">
+                        <Button.Background>
+                            <SolidColorBrush Color="Yellow" Opacity="0.01"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="BtnFermanagh" Content="" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30.914" Width="65.498" Canvas.Left="353.491" Canvas.Top="179.898" Click="BtnFermanagh_Click" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" BorderThickness="0">
+                        <Button.RenderTransform>
+                            <CompositeTransform Rotation="36.233"/>
+                        </Button.RenderTransform>
+                        <Button.Background>
+                            <SolidColorBrush Color="Yellow" Opacity="0.01"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="BtnMonaghan" Content="" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="29.022" Width="51.038" Canvas.Left="408.359" Canvas.Top="202.767" Click="BtnMonaghan_Click" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" BorderThickness="0">
+                        <Button.RenderTransform>
+                            <CompositeTransform Rotation="32.791"/>
+                        </Button.RenderTransform>
+                        <Button.Background>
+                            <SolidColorBrush Color="Yellow" Opacity="0.01"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="BtnLouth" Content="" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="42" Width="44" Canvas.Left="445" Canvas.Top="222" Click="BtnLouth_Click" BorderThickness="0">
+                        <Button.Background>
+                            <SolidColorBrush Color="Yellow" Opacity="0.01"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="BtnCavan" Content="" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="24.031" Width="77" Canvas.Left="358.463" Canvas.Top="216.741" Click="BtnCavan_Click" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" BorderThickness="0">
+                        <Button.RenderTransform>
+                            <CompositeTransform Rotation="28.287"/>
+                        </Button.RenderTransform>
+                        <Button.Background>
+                            <SolidColorBrush Color="Yellow" Opacity="0.01"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="BtnLetrim" Content="" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="83.139" Width="23.682" Canvas.Left="346.759" Canvas.Top="174.343" Click="BtnLetrim_Click" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" BorderThickness="0">
+                        <Button.RenderTransform>
+                            <CompositeTransform Rotation="-24.12"/>
+                        </Button.RenderTransform>
+                        <Button.Background>
+                            <SolidColorBrush Color="Yellow" Opacity="0.01"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="BtnSligo" Content="" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="47.562" Width="39.885" Canvas.Left="300.827" Canvas.Top="192.443" Click="BtnSligo_Click" BorderThickness="0" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Button.RenderTransform>
+                            <CompositeTransform Rotation="-29.134"/>
+                        </Button.RenderTransform>
+                        <Button.Background>
+                            <SolidColorBrush Color="Yellow" Opacity="0.10000000149011612"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="btnRoscommon" Content="" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="76.858" Width="35" Canvas.Left="331.042" Canvas.Top="230.006" Click="btnRoscommon_Click" BorderThickness="0" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Button.RenderTransform>
+                            <CompositeTransform Rotation="-14.83"/>
+                        </Button.RenderTransform>
+                        <Button.Background>
+                            <SolidColorBrush Color="Yellow" Opacity="0.01"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="BtnMayo" Content="" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="85.369" Width="55.578" Canvas.Left="239.546" Canvas.Top="191.967" Click="BtnMayo_Click" BorderThickness="0" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Button.RenderTransform>
+                            <CompositeTransform Rotation="-43.521"/>
+                        </Button.RenderTransform>
+                        <Button.Background>
+                            <SolidColorBrush Color="Yellow" Opacity="0.01"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="BtnGalway" Content="" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="60" Width="120" Canvas.Left="226" Canvas.Top="275" Click="BtnGalway_Click" BorderThickness="0">
+                        <Button.Background>
+                            <SolidColorBrush Color="Yellow" Opacity="0.01"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="BtnClare" Content="" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="34.637" Width="98" Canvas.Left="238.237" Canvas.Top="346.063" Click="BtnClare_Click" BorderThickness="0" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Button.RenderTransform>
+                            <CompositeTransform Rotation="-9.383"/>
+                        </Button.RenderTransform>
+                        <Button.Background>
+                            <SolidColorBrush Color="Yellow" Opacity="0.01"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="BtnKerry" Content="" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="78.044" Width="81.019" Canvas.Left="195.211" Canvas.Top="394.251" Click="BtnKerry_Click" BorderThickness="0" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Button.RenderTransform>
+                            <CompositeTransform Rotation="-10.769"/>
+                        </Button.RenderTransform>
+                        <Button.Background>
+                            <SolidColorBrush Color="Yellow" Opacity="0.01"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="BtnLimerick" Content="" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="37" Width="68" Canvas.Left="278" Canvas.Top="381" Click="BtnLimerick_Click" BorderThickness="0">
+                        <Button.Background>
+                            <SolidColorBrush Color="Yellow" Opacity="0.01"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="BtnCork" Content="" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="64.189" Width="75.757" Canvas.Left="287.44" Canvas.Top="423.435" Click="BtnCork_Click" BorderThickness="0" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Button.RenderTransform>
+                            <CompositeTransform Rotation="-12.684"/>
+                        </Button.RenderTransform>
+                        <Button.Background>
+                            <SolidColorBrush Color="Yellow" Opacity="0.01"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="BtnTipp" Content="" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="78" Width="46" Canvas.Left="345" Canvas.Top="346" Click="BtnTipp_Click" BorderThickness="0" RenderTransformOrigin="0.5,0.5">
+                        <Button.RenderTransform>
+                            <CompositeTransform Rotation="-16.572"/>
+                        </Button.RenderTransform>
+                        <Button.Background>
+                            <SolidColorBrush Color="Yellow" Opacity="0.01"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="BtnWaterford" Content="" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="34.09" Width="62.206" Canvas.Left="364.215" Canvas.Top="418.206" Click="BtnWaterford_Click" BorderThickness="0" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Button.RenderTransform>
+                            <CompositeTransform Rotation="-11.509"/>
+                        </Button.RenderTransform>
+                        <Button.Background>
+                            <SolidColorBrush Color="Yellow" Opacity="0.01"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="BtnLongford" Content="" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="26.648" Canvas.Left="368.079" Canvas.Top="241.999" Click="BtnLongford_Click" BorderThickness="0" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Button.RenderTransform>
+                            <CompositeTransform Rotation="47.579"/>
+                        </Button.RenderTransform>
+                        <Button.Background>
+                            <SolidColorBrush Color="Yellow" Opacity="0.01"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="BtnOffaly" Content="" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="23" Width="63" Canvas.Left="362" Canvas.Top="300" Click="BtnOffaly_Click" BorderThickness="0">
+                        <Button.Background>
+                            <SolidColorBrush Color="Yellow" Opacity="0.01"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="BtnKillkenny" Content="" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="58" Width="31.42" Canvas.Left="398.04" Canvas.Top="361.121" Click="BtnKillkenny_Click" BorderThickness="0" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Button.RenderTransform>
+                            <CompositeTransform Rotation="-16.3"/>
+                        </Button.RenderTransform>
+                        <Button.Background>
+                            <SolidColorBrush Color="Yellow" Opacity="0.01"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="BtnWexford" Content="" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="61.655" Width="42.612" Canvas.Left="448.534" Canvas.Top="369.268" Click="BtnWexford_Click" RenderTransformOrigin="0.381,0.4" BorderThickness="0" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Button.RenderTransform>
+                            <CompositeTransform Rotation="33.373"/>
+                        </Button.RenderTransform>
+                        <Button.Background>
+                            <SolidColorBrush Color="Yellow" Opacity="0.01"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="BtnLaois" Content="" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="44" Width="42" Canvas.Left="383" Canvas.Top="320" Click="BtnLaois_Click" BorderThickness="0">
+                        <Button.Background>
+                            <SolidColorBrush Color="Yellow" Opacity="0.01"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="BtnWestMeath" Content="" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="26.852" Width="51.777" Canvas.Left="370.963" Canvas.Top="272.241" Click="BtnWestMeath_Click" BorderThickness="0" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Button.RenderTransform>
+                            <CompositeTransform Rotation="-18.627"/>
+                        </Button.RenderTransform>
+                        <Button.Background>
+                            <SolidColorBrush Color="Yellow" Opacity="0.10000000149011612"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="BtnMeath" Content="" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="45" Width="44" Canvas.Left="426" Canvas.Top="252" Click="BtnMeath_Click" BorderThickness="0">
+                        <Button.Background>
+                            <SolidColorBrush Color="Yellow" Opacity="0.01"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="BtnKildare" Content="" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="54.1" Width="31.712" Canvas.Left="423.318" Canvas.Top="295.758" Click="BtnKildare_Click" BorderThickness="0" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Button.RenderTransform>
+                            <CompositeTransform Rotation="13.207"/>
+                        </Button.RenderTransform>
+                        <Button.Background>
+                            <SolidColorBrush Color="Yellow" Opacity="0.01"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="BtnDublin" Content="" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="48" Width="25" Canvas.Left="464" Canvas.Top="275" Click="BtnDublin_Click" RenderTransformOrigin="0.429,0.5" BorderThickness="0">
+                        <Button.Background>
+                            <SolidColorBrush Color="Yellow" Opacity="0.01"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="BtnWicklow" Content="" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="44" Width="36" Canvas.Left="458" Canvas.Top="320" Click="BtnWicklow_Click" RenderTransformOrigin="12.714,-5.1" BorderThickness="0">
+                        <Button.Background>
+                            <SolidColorBrush Color="Yellow" Opacity="0.0099999997764825821"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="BtnCarlow" Content="" IsEnabled="False" HorizontalAlignment="Left" VerticalAlignment="Top" Height="36.694" Width="28.646" Canvas.Left="426.828" Canvas.Top="353.559" Click="BtnCarlow_Click" BorderThickness="0" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Button.RenderTransform>
+                            <CompositeTransform Rotation="15.365"/>
+                        </Button.RenderTransform>
+                        <Button.Background>
+                            <SolidColorBrush Color="Yellow" Opacity="0.01"/>
+                        </Button.Background>
+                    </Button>
+                    <Button x:Name="BtnStart" BorderBrush="Green" FontWeight="Bold" Content="Start" Canvas.Left="627.75" Foreground="black" Canvas.Top="10" Height="57" Click="BtnStart_Click" BorderThickness="2" Width="137" Background="#FFE6FD00" FontSize="20" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" FontFamily="Buxton Sketch">
+                        <Button.RenderTransform>
+                            <CompositeTransform Rotation="0.608"/>
+                        </Button.RenderTransform>
+                    </Button>
+                    <TextBlock x:Name="Quest"  Canvas.Left="728.099" FontSize="25" TextWrapping="Wrap" Text="" Canvas.Top="81.883" Height="29.559" Width="192.465" Foreground="Black" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" FontFamily="Buxton Sketch">
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform Rotation="0.518"/>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <TextBlock x:Name="txtScoreUp" Canvas.Left="649.773" TextWrapping="Wrap" Foreground="Black" FontSize="25" Text="0" Canvas.Top="299.395" Height="47" Width="40" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" FontFamily="Buxton Sketch">
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform Rotation="1.15"/>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <TextBlock x:Name="txtLivesLeft" Opacity="0" Canvas.Left="957" Foreground="white" TextWrapping="Wrap" FontSize="30" Text=" 3" Canvas.Top="10" Height="47" Width="33"/>
+                    <TextBlock x:Name="txtTimer" Canvas.Left="728.343"   TextWrapping="Wrap"  FontSize="25" Text=" " Canvas.Top="113.669" Height="28.677" Width="275.901" Foreground="Black" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" FontFamily="Buxton Sketch">
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform Rotation="0.528"/>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <TextBlock x:Name="Where"   Canvas.Left="577.4" FontSize="25" Foreground="Black"   TextWrapping="Wrap" Text="Find :" TextAlignment="Right" Canvas.Top="79.743" Height="25.605" Width="125.478" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" FontFamily="Buxton Sketch">
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform Rotation="0.731"/>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <Image x:Name="live1" Height="42.909" Canvas.Left="245.256" Source="Assets/lives.png"  Canvas.Top="10.252" Width="49.618" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Image.RenderTransform>
+                            <CompositeTransform Rotation="0.736"/>
+                        </Image.RenderTransform>
+                    </Image>
+                    <Image x:Name="live2" Height="44.141" Canvas.Left="304.089" Source="Assets/lives.png"  Canvas.Top="10.678" Width="49.192" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Image.RenderTransform>
+                            <CompositeTransform Rotation="1.136"/>
+                        </Image.RenderTransform>
+                    </Image>
+                    <Image x:Name="live3" Height="47.784" Canvas.Left="356.612" Source="Assets/lives.png"  Canvas.Top="9.445" Width="52.86" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Image.RenderTransform>
+                            <CompositeTransform Rotation="1.395"/>
+                        </Image.RenderTransform>
+                    </Image>
+                    <Button Content="Button" Canvas.Left="8" Canvas.Top="412" Opacity="0.01"/>
+                    <Button Content="" Canvas.Left="1282"  Canvas.Top="694" Height="69" Width="72" Click="Button_Click_1" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Button.RenderTransform>
+                            <CompositeTransform Rotation="0.145"/>
+                        </Button.RenderTransform>
+                        <Button.Background>
+                            <ImageBrush Stretch="Fill" ImageSource="Assets/info.png"/>
+                        </Button.Background>
+                    </Button>
+                    <TextBlock x:Name="txtTimer_Copy" Canvas.Left="613.159"   TextWrapping="Wrap"  FontSize="25" Text="You Are" Canvas.Top="111.595" Height="32.991" Width="91.483" Foreground="Black" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" FontFamily="Buxton Sketch">
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform Rotation="0.778"/>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <Border BorderBrush="green" BorderThickness="3" Height="55.156" Canvas.Left="159.455" Canvas.Top="4.648" Width="255.353" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Border.RenderTransform>
+                            <CompositeTransform Rotation="0.045"/>
+                        </Border.RenderTransform>
+                    </Border>
+                    <TextBlock x:Name="TimerTextBlock" Canvas.Left="658.61" FontFamily="Times Square" TextWrapping="Wrap"  FontSize="88" Text="" Canvas.Top="107.151" Height="186.453" Width="179.751"  Foreground="#FFFFE800" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <TextBlock.RenderTransform>
+                            <CompositeTransform Rotation="0.161"/>
+                        </TextBlock.RenderTransform>
+                    </TextBlock>
+                    <ScrollBar Canvas.Left="268" Canvas.Top="758"/>
+                    <TextBlock x:Name="realTime" Canvas.Left="722" TextWrapping="Wrap"  Text="TextBlock" Canvas.Top="593" Height="46" Width="123" Foreground="#FFFDFDFD"/>
+                </Canvas>
+            </Grid>
+
+
+        </ScrollViewer>
+    </Viewbox>
+</Page>
